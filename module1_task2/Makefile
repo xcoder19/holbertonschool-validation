@@ -4,8 +4,8 @@ HUGO = hugo
 OUTPUT_DIR = dist
 
 THEME = ananke
-## build
-build:
+
+build: ## build
 	@hugo
 
 
