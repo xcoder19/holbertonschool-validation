@@ -1,12 +1,7 @@
-HUGO_VERSION = 0.84.0
-HUGO_BIN = hugo_extended
-
 build:
-	@$(HUGO_BIN)
-
+	@hugo
 clean:
-	@rm -rf public/*
-
+	rm -rf dist/*
 post:
-	@$(HUGO_BIN) new "content/$(POST_NAME).md"
-	@echo "title: $(POST_TITLE)" >> "content/$(POST_NAME).md"
+	hugo new posts/$(POST_NAME).md
+	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
