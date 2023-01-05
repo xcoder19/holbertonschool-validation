@@ -1,7 +1,7 @@
 
 HUGO = hugo
 
-OUTPUT_DIR = dict
+OUTPUT_DIR = dist
 
 THEME = ananke
 
