@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
-docker run --rm --tty --interactive --volume=$(pwd):/app --workdir=/app ubuntu:18.04 /bin/bash
-apt-get update && apt-get install -y hugo make
-make build
+if ! [ -x "$(command -v hugo)" ]; then
+	sudo apt-get update
+  	sudo apt-get install hugo
+fi
+
+if ! [ -x "$(command -v make)" ]; then
+  
+  sudo apt-get update
+  sudo apt-get install make
+fi
+
