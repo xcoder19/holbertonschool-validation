@@ -9,7 +9,7 @@ build:
 	$(HUGO) -d $(OUTPUT_DIR) -t $(THEME)
 
 clean:
-	rm -rf $(OUTPUT_DIR)/*
+	rm -rf $(OUTPUT_DIR)
 
 post:
 	$(HUGO) new "posts/$(POST_NAME).md" -t $(THEME)
