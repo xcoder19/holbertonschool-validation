@@ -19,4 +19,4 @@ post: ## post
 
 
 help: ## help
-	@echo "clean post build"
+	@echo "clean post build help"

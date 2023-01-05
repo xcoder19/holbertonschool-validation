@@ -3,3 +3,4 @@ Lifecycle
 clean
 build
 post
+help
