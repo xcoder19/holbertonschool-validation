@@ -12,11 +12,11 @@ build:
 clean: ## clean
 	rm -rf $(OUTPUT_DIR)
 
-## post
-post:
+
+post: ## post
 	$(HUGO) new "posts/$(POST_NAME).md" -t $(THEME)
 	echo 'title: "$(POST_TITLE)"' >> "content/posts/$(POST_NAME).md"
 
-## help
-help:
-	echo "cook: Prepare a clean meal in the current kitchen help: Show this help usage"
+
+help: ## help
+	@echo "clean"
