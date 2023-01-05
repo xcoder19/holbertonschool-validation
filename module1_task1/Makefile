@@ -6,7 +6,7 @@ OUTPUT_DIR = dist
 THEME = ananke
 
 build:
-	$(HUGO) -d $(OUTPUT_DIR) -t $(THEME)
+	@hugo
 
 clean:
 	rm -rf $(OUTPUT_DIR)
