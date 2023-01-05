@@ -10,3 +10,4 @@ if ! [ -x "$(command -v make)" ]; then
   sudo apt-get install make
 fi
 
+make build
