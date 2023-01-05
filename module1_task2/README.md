@@ -1,5 +1,7 @@
-Prerequisites
-Lifecycle
+## Prerequisites
+
+## Lifecycle
+
 clean
 build
 post
