@@ -1,5 +1,5 @@
 HUGO_VERSION = 0.84.0
-HUGO_BIN = hugo_extended_$(HUGO_VERSION)_Linux-64bit
+HUGO_BIN = hugo_extended_$(HUGO_VERSION)
 
 build:
 	@$(HUGO_BIN)
