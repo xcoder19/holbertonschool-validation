@@ -8,8 +8,9 @@ THEME = ananke
 build:
 	@hugo
 
-## clean
+
 clean:
+## clean
 	rm -rf $(OUTPUT_DIR)
 
 ## post
