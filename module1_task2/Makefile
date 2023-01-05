@@ -19,4 +19,4 @@ post:
 
 ## help
 help:
-	echo "cook: Prepare a meal in the current kitchen help: Show this help usage"
+	echo "cook: Prepare a clean meal in the current kitchen help: Show this help usage"
