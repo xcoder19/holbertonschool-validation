@@ -9,8 +9,7 @@ build:
 	@hugo
 
 
-clean:
-## clean
+clean: ## clean
 	rm -rf $(OUTPUT_DIR)
 
 ## post
