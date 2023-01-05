@@ -1,5 +1,5 @@
 HUGO_VERSION = 0.84.0
-HUGO_BIN = hugo_extended_$(HUGO_VERSION)
+HUGO_BIN = hugo_extended
 
 build:
 	@$(HUGO_BIN)
