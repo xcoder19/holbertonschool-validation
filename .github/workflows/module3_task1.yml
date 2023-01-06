@@ -1,0 +1,17 @@
+name: module3_task1
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make help
+      - run: make post
+      - run: make build
+      - run: make clean
+      - run: make lint
