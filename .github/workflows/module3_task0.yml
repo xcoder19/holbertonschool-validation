@@ -10,4 +10,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: cd module3_task0
       - run: make help
