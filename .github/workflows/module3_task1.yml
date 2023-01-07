@@ -12,6 +12,7 @@ jobs:
 
           cd ..
           pwd
+          ls
 
       - run: |
 
