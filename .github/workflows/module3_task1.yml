@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - run: pwd
-      - run: ./setup.sh
+      - run: module3_task1/./setup.sh
       - run: make build
         shell: bash
