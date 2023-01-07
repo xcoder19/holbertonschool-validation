@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - run: ls
+      - run: ls ${{ github.workspace }}
       - run: pwd
       - run: pwd
       - run: make build
