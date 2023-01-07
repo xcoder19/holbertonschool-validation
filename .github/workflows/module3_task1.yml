@@ -9,8 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-    working-directory: ./module3_task1
+    
     steps:
+      working-directory: ./module3_task1
       - run: pwd
       - run: pwd
       - run: make build
