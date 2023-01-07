@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - run: |
+          ls
           cd module3_task1
           ./setup.sh
 
