@@ -10,9 +10,9 @@ jobs:
     steps:
       - run: |
 
-          cd ./module3_task1
+
           ./setup.sh
 
       - run: |
-          cd ./module3_task1
+
           make build
