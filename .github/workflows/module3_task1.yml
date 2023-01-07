@@ -10,8 +10,8 @@ jobs:
     steps:
       - run: |
 
-          touch hello.txt
-          ls -a
+          cd ..
+          pwd
 
       - run: |
 
