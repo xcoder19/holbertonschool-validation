@@ -10,11 +10,7 @@ jobs:
     steps:
       - run: |
 
-          cd ../..
-          pwd
-          ls
-          cd _temp
-          ls
+          cd holbertonschool-validation
 
       - run: |
 
