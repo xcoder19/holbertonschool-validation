@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - run: pwd
-      - run: cd module3_task1/
+      working-directory: ./module3_task1
       - run: pwd
       - run: make build
         shell: bash
