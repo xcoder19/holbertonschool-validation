@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: |
 
-          cd module3_task0/
+          touch hello.txt
 
       - run: |
 
