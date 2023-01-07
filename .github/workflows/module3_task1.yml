@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: |
           ls
-          cd module3_task1
+          cat setup.sh
           ./setup.sh
 
       - run: |
