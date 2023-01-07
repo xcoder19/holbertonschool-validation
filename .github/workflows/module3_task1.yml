@@ -10,10 +10,9 @@ jobs:
     steps:
       - run: |
 
-          cd ..
+          cd ../..
           pwd
           ls
-          ./setup.sh
 
       - run: |
 
