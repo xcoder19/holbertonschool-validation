@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - run: ./module3_task1/setup.sh
+      - run: ls
       - run: pwd
       - run: pwd
       - run: make build
