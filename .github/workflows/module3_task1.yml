@@ -10,8 +10,7 @@ jobs:
     steps:
       - run: |
 
-          ls | echo *
-          ./setup.sh
+          ./module3_task1/setup.sh
 
       - run: |
 
