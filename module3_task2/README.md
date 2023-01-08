@@ -1,6 +1,6 @@
-## Prerequisites
+# Prerequisites
 
-# Lifecycle
+## Lifecycle
 
 clean
 build
