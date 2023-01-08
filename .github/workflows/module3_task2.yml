@@ -17,5 +17,6 @@ jobs:
       - name: make
         run: |
           cd module3_task2
+          make lint
           make build
           make package
