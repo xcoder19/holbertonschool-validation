@@ -25,7 +25,7 @@ post: ## post
 
 
 help: ## help
-	@echo "clean post build help unit-tests integration-tests validate"
+	@echo "clean post build help unit-tests integration-tests validate package"
 
 unit-tests: ## unit-tests
 	@echo "unit_test"
