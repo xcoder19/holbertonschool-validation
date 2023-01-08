@@ -35,3 +35,6 @@ integration-tests: ## integration-tests
 
 validate: ## validate
 	@echo "validate"
+	
+lint: ##lint
+	@echo "lint"
