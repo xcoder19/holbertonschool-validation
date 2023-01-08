@@ -8,6 +8,7 @@ post
 help
 package
 unit-tests
+integration-tests
 
 # Deployment
 
