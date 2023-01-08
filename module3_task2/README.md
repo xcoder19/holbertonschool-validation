@@ -11,6 +11,6 @@ unit-tests
 integration-tests
 validate
 
-# Deployment
+### Deployment
 
-## What is in the archive and how to unarchive it?
+#### What is in the archive and how to unarchive it?
