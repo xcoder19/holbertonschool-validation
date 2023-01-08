@@ -9,6 +9,7 @@ help
 package
 unit-tests
 integration-tests
+validate
 
 # Deployment
 

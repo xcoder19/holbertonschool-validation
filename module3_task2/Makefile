@@ -25,10 +25,13 @@ post: ## post
 
 
 help: ## help
-	@echo "clean post build help unit-tests integration-tests"
+	@echo "clean post build help unit-tests integration-tests validate"
 
 unit-tests: ## unit-tests
 	@echo "unit_test"
 
 integration-tests: ## integration-tests
 	@echo "integration-tests"
+
+validate: ## validate
+	@echo "validate"
