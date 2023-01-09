@@ -25,7 +25,7 @@ jobs:
           make package
       - if: github.event.ref_type == 'tag'
         name: Create release
-        uses: softprops/gh-release
+        uses: softprops/gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
