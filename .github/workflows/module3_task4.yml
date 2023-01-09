@@ -1,0 +1,41 @@
+name: module3_task4
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 1 * *'
+jobs:
+  check_build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: setup
+        uses: actions/checkout@v3
+      - name: initiate
+        run: |
+          cd module3_task4
+          ./setup.sh
+      - name: make
+        run: |
+          cd module3_task4
+          make lint
+          make unit-tests
+          make validate
+          make integration-tests
+          make build
+          make package
+      - if: github.event.ref_type == 'tag'
+        name: Create release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: '1.0.0'
+          release_name: '1.0.0'
+          body: |
+            $(cat DEPLOY.md)
+      - if: github.event.ref_type == 'tag'
+        name: Upload archive
+        uses: actions/upload-artifact@v2
+        with:
+          name: awesome-website
+          path: module3_task3/awesome-website.zip
