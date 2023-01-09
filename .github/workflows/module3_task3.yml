@@ -38,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: awesome-website
-          path: awesome-website.zip
+          path: module3_task3/awesome-website.zip
