@@ -1,6 +1,6 @@
 name: module4_task0
 on:
-  pull:
+  pull_request:
     branches: [main]
   push:
     branches: [main]
