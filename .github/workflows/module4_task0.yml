@@ -1,6 +1,6 @@
 name: module4_task0
 on:
-  push:
+  pull:
     branches: [main]
   schedule:
     - cron: '0 0 1 * *'
