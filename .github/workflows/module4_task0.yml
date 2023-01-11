@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: setup
-        uses: nwtgck/actions-netlify
         uses: actions/checkout@v3
       - name: initiate
+        uses: nwtgck/actions-netlify
         run: |
           cd module3_task4
           ./setup.sh
