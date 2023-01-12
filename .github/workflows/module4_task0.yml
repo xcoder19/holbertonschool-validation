@@ -28,7 +28,7 @@ jobs:
           make build
           make package
       - name: deploy
-        uses: nwtgck/actions-netlify
+        uses: nwtgck/actions-netlify@v2
       - if: github.event.ref_type == 'tag'
         name: Create release
         uses: softprops/action-gh-release@v1
