@@ -2,8 +2,8 @@
 if ! [ -x "$(command -v hugo)" ]; then
 	apt-get update
 	apt install zip unzip
-	curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
-	apt install -y nodejs
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+	nvm install v16
 	npm install -g markdownlint-cli
   	curl -L https://github.com/gohugoio/hugo/releases/download/v0.109.0/hugo_extended_0.109.0_linux-amd64.deb -o hugo.deb
 	apt install ./hugo.deb
