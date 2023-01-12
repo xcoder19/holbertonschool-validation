@@ -4,6 +4,7 @@ if ! [ -x "$(command -v hugo)" ]; then
 	apt install zip unzip
 	apt-get install -y nodejs
 	apt install -y npm
+	npm i -D @types/node
 	npm install -g markdownlint-cli
   	curl -L https://github.com/gohugoio/hugo/releases/download/v0.109.0/hugo_extended_0.109.0_linux-amd64.deb -o hugo.deb
 	apt install ./hugo.deb
