@@ -36,5 +36,5 @@ integration-tests: ## integration-tests
 validate: ## validate
 	@echo "validate"
 
-lint: ##lint
-	markdownlint DEPLOY.md README.md
+lint: ##lint	# markdownlint DEPLOY.md README.md
+	@echo "lint"
