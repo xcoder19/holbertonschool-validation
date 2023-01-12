@@ -9,7 +9,8 @@ on:
 jobs:
   check_build:
     runs-on: ubuntu-18.04
-
+    container:
+      image: golang:1.15.8-buster
     steps:
       - name: setup
         uses: actions/checkout@v3
