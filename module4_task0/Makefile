@@ -33,7 +33,7 @@ unit-tests: ## unit-tests
 	
 
 integration-tests: ## integration-tests
-	@echo "integration-tests"
+	@touch coverage-integrations.out
 
 validate: ## validate
 	@echo "validate"
