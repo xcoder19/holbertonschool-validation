@@ -7,17 +7,17 @@ THEME = ananke
 
 
 package: ## package
-	 zip -r awesome-website.zip awesome-api dist
+	 @zip -r awesome-website.zip awesome-api dist
 
 
 build: ## build
 	@hugo
-	touch awesome-api
+	@touch "awesome-api"
 
 
 clean: ## clean
-	rm -rf $(OUTPUT_DIR)
-	rm -rf awesome-website.zip
+	@rm -rf $(OUTPUT_DIR)
+	@rm -rf awesome-website.zip
 
 
 post: ## post
