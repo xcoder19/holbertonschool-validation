@@ -30,7 +30,7 @@ help: ## help
 
 unit-tests: ## unit-tests
 	@echo "unit_test"
-	touch coverage-units.out
+	touch "coverage-units.out"
 
 integration-tests: ## integration-tests
 	@echo "integration-tests"
