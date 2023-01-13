@@ -12,6 +12,7 @@ package: ## package
 
 build: ## build
 	@hugo
+	mkdir awesome-api
 
 
 clean: ## clean
