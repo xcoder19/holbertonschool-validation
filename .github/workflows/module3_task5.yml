@@ -1,0 +1,58 @@
+name: module3_task5
+on:
+  pull_request:
+    types: [opened, reopened, edited, ready_for_review]
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 1 * *'
+jobs:
+  check_build:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: setup
+        uses: actions/checkout@v3
+      - name: initiate
+
+        run: |
+          cd module3_task5
+          ./setup.sh
+      - name: make
+        run: |
+          cd module3_task5
+          make lint
+          make unit-tests
+          make validate
+          make integration-tests
+          make build
+          make package
+
+      - name: artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact awesome-website.zip
+          path: module4_task0/awesome-website.zip
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            module3_task5/awesome-website.zip
+            module3_task5/DEPLOY.md
+
+      - name: deploy
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: 'module3_task5/dist'
+          production-branch: main
+          github-token: ${{ secrets.REPO_TOKEN }}
+          deploy-message: 'deploy to netlify'
+          enable-pull-request-comment: true
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
